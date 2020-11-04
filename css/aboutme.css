@@ -1,0 +1,81 @@
+:root {
+  --background: rgb(54, 57, 63);
+  --background2: rgba(54,57,63,0.5);
+  --yellow: rgb(255, 213, 17);
+  --black: rgb(29, 29, 27);
+  --white: rgb(255,255,255);
+}
+
+.aboutme {
+  background-color: var(--background);
+  height: 100vh;
+  margin-top: 90px; 
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 1100px;
+  height: 450px;
+  padding: 110px 40px 130px;
+}
+
+.aboutme-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  /*align-items: flex-start;*/
+  text-align: left;
+}
+
+.aboutme-greeting{
+  font-size: 30px;
+  font-weight: 1100;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.aboutme-name {
+  font-size: 40px;
+  font-weight: 1200;
+  color:var(--yellow);
+  margin-bottom: 7px;
+}
+
+.aboutme-img {
+  max-width: 550px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  background-image: none;
+}
+
+.aboutme-descrip {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.aboutme-button {
+  background-color: var(--yellow);
+  color:var(--black);
+  border-radius: 100px;
+  width: fit-content;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.aboutme-button:hover{
+background-color: rgb(255, 228, 85);
+}

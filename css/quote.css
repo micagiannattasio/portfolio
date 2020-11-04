@@ -1,0 +1,36 @@
+:root {
+  --background: rgb(54, 57, 63);
+  --background2: #32353B;
+  --yellow: rgb(255, 213, 17);
+  --black: rgb(29, 29, 27);
+  --white: rgb(255,255,255);
+}
+
+.quote {
+  background-color: var(--yellow);
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  color: var(--black);
+}
+
+.quote-container i {
+  font-size: 5rem;
+  padding-bottom: 40px;
+}
+
+.quote-text {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+
+.quote-autor {
+  padding-bottom: 100px;
+  font-weight: bold;
+}

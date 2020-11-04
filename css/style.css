@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(54, 57, 63);
+  --yellow: rgb(255, 213, 17);
+  --black: rgb(29, 29, 27);
+  --white: rgb(255,255,255);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /*height: 100vh;*/
+  background-color: var(--background);
+  color: var(--white)
+}
+
+.margins {
+  padding: 0 150px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
