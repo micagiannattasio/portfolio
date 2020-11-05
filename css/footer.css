@@ -7,5 +7,61 @@
 }
 
 .footer-container {
+  width: 100%;
   background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding-top: 50px;
+  list-style: none;
+}
+
+.footer-nav-item {
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.footer-contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.footer-social-item {
+  margin: 5px;
+}
+
+.footer-social-link {
+  color: var(--white);
+  border: solid 1px var(--black);
+  border-radius: 50%;
+  background-color: var(--black);
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-right: 8px;
+  
+}
+
+.footer-social-link:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--black);
+  margin: 30px;
+  font-weight: bold;
+  font-size: 16px;
 }

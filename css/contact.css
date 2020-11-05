@@ -1,0 +1,58 @@
+:root {
+  --background: rgb(54, 57, 63);
+  --background2: #32353B;
+  --yellow: rgb(255, 213, 17);
+  --black: rgb(29, 29, 27);
+  --white: rgb(255,255,255);
+}
+
+.contact {
+  background-color: var(--background2);
+  /* width: 100%; */
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  border: solid 2px white ;
+  background-color: var(--background);
+  text-align: left;
+  padding: 50px 70px;
+}
+
+.contact-description {
+  max-width: 400px;
+}
+
+.contact-me {
+  width: 50%;
+  /* padding: 50px 25px; */
+}
+
+.contact-me:first-of-type {
+  padding-right: 20px;
+}
+
+/* .contact-me .contact-title {
+  padding-left: 10px;
+} */
+
+/* .contact-me:last-of-type {
+  padding-left: 20px;
+} */
+
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-lastname-box {
+  display: flex;
+  flex-direction: row;
+}
