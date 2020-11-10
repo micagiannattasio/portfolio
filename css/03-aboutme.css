@@ -105,7 +105,7 @@ background-color: var(--yellow2);
   .aboutme-container {
     display: flex;
     flex-direction: column;
-    padding: 6.875rem 0 8.125rem;
+    padding: 2.5rem 0 5rem;
     justify-content: center;
     align-items: center;
   }
