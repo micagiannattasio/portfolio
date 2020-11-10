@@ -109,6 +109,9 @@ background-color: var(--yellow2);
     justify-content: center;
     align-items: center;
   }
+  .aboutme-greeting{
+    margin-top: 0;
+  }
   .aboutme-info:last-of-type{
     margin-top: 1.25rem;
   }
