@@ -25,10 +25,24 @@ body {
 }
 
 .margins {
-  padding: 0 150px;
+  padding: 0 9.375rem;
 }
 
 a {
   text-decoration: none;
   color: var(--black);
+}
+
+@media (max-widht:768px) {
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .margins {
+   padding: 0.625rem;
+ }
+ /* html, body {
+   width: 100vw;
+ } */
 }

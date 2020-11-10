@@ -2,6 +2,7 @@
   --background: rgb(54, 57, 63);
   --background2: rgba(54,57,63,0.5);
   --yellow: rgb(255, 213, 17);
+  --yellow2:  rgb(255, 228, 85);
   --black: rgb(29, 29, 27);
   --white: rgb(255,255,255);
 }
@@ -9,7 +10,7 @@
 .aboutme {
   background-color: var(--background);
   height: 100vh;
-  margin-top: 90px; 
+  margin-top: 5.625rem; 
   display: flex;
   justify-content: center;
 }
@@ -18,15 +19,13 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 1100px;
-  height: 450px;
-  padding: 110px 40px 130px;
+  width: 100%;
+  padding: 6.875rem 2.5rem 8.125rem;
 }
 
 .aboutme-info {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 500px;
   /*align-items: flex-start;*/
   text-align: left;
@@ -35,15 +34,15 @@
 .aboutme-greeting{
   font-size: 30px;
   font-weight: 1100;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  margin-top: 5rem;
+  margin-bottom: 0.625rem;
 }
 
 .aboutme-name {
   font-size: 40px;
   font-weight: 1200;
   color:var(--yellow);
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
 }
 
 .aboutme-img {
@@ -52,14 +51,13 @@
 
 img {
   display: block;
-  width: 100%;
   background-image: none;
 }
 
 .aboutme-descrip {
   font-size: 15px;
-  margin-top: 15px;
-  margin-bottom: 40px;
+  margin-top: 0.9375rem;
+  margin-bottom: 2.5rem;
 }
 
 .aboutme-button {
@@ -67,7 +65,7 @@ img {
   color:var(--black);
   border-radius: 100px;
   width: fit-content;
-  padding: 10px 40px;
+  padding: 0.625rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,5 +75,44 @@ img {
 }
 
 .aboutme-button:hover{
-background-color: rgb(255, 228, 85);
+background-color: var(--yellow2);
+}
+
+/* ESTILOS PARA RESPONSIVE*/
+
+@media (max-width:1023px){
+  .margins {
+    padding: 0.625rem;
+  }
+  img {
+    width: 100%;
+  }
+  .aboutme-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width:767px){
+  .aboutme {
+    height: auto;
+    margin-top:0;
+    width: 100%;
+    padding: 0.625rem;
+  }
+  .aboutme-container {
+    display: flex;
+    flex-direction: column;
+    padding: 6.875rem 0 8.125rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme-info:last-of-type{
+    margin-top: 1.25rem;
+  }
+  .aboutme-img {
+    max-width: 300px;
+  }
 }

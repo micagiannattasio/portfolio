@@ -1,0 +1,110 @@
+
+.knowledge {
+  background-color: var(--background2);
+}
+
+.knowledge-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 6.25rem;
+ width: 100%;
+}
+
+.knowledge-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6.25rem 0 2.375rem 0;
+}
+
+.knowledge-text h2{
+  font-size: 3.125rem;
+  font-weight: 1000;
+  padding-bottom: 0.625rem;
+}
+
+.knowledge-text p {
+  max-width: 400px;
+  text-align: center;  
+}
+
+.knowledge-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3.125rem;
+}
+
+.knowledge-item{
+  width: 260px;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /*por que me lo centra con align?*/
+  border-radius: 10px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  background-color: var(--background);
+  margin: 0.75em;
+  transition: 0.2s;
+}
+
+.knowledge-item i{
+  font-size: 4.6875rem;
+}
+
+.icon-title {
+  margin-top: 0.9375rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.knowledge-item:hover {
+color: var(--yellow);
+border: solid 2px var(--yellow);
+}
+
+/*REPONSIVE*/
+@media (max-width:1023px){
+  .knowledge {
+    width: 100%;
+    padding: 0.625rem;
+  }
+  .knowledge-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .knowledge-text {
+    text-align: center;
+  }
+}
+
+@media (max-width:767px) {
+  .knowledge {
+    width: 100%;
+  }
+  .margins {
+    padding: 0.625rem;
+  }
+  
+  .knowledge-container {
+    padding-bottom: 0;
+  }
+  .knowledge-text h2{
+    font-size: 35px;
+  }
+  .knowledge-text p {
+    font-size: 15px;  
+  }
+  .knowledge-item{
+    width: 200px;
+    height: 200px;
+  }
+}
