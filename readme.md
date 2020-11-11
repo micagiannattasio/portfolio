@@ -3,7 +3,7 @@
 ### Este proyecto está realizado para mostrar un ejemplo de como sería un portafolio para la entrega final del Módulo-01 de Ada.
 
 
-### Si quieres ver como quedo mi proyecto puedes darle click a este [enlace](https://micagiannattasio.github.io/portfolio/) o puedes hacerlo desde [acá]().
+### Si quieres ver como quedo mi proyecto puedes darle click a este [enlace](https://micagiannattasio.github.io/portfolio/) o puedes hacerlo desde [acá](https://brave-heisenberg-f5eafd.netlify.app).
 
 <br>
 
