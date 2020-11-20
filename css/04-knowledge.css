@@ -104,7 +104,7 @@ border: solid 2px var(--yellow);
     font-size: 15px;  
   }
   .knowledge-item{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px; /* confirmar tamaño*/
   }
 }

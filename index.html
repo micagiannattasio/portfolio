@@ -3,7 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+  <!-- Primary Meta tags -->
+  <meta name="title" content="Micaela Giannattasio - Portafolio">
+  <meta name="description" content="Portafolio con los proyectos realizados durante el desarrollo del cruso Frontend">
+  <meta name="author" content="Micaela Giannattasio">
+  <meta name="keywords" content="programador web, desarrollo frontend, programacion, portafolio">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Micaela Giannattasio - Portafolio">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Portafolio con los proyectos realizados durante el desarrollo del cruso Frontend">
+  <meta property="og:site name" content="portfolio">
+  <meta property="og:url" content="https://micagiannattasio.github.io/portfolio/">
+  <meta property="og:image" content="https://github.com/micagiannattasio/portfolio/blob/main/img/portafolio.png">
+
+
+<!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://micagiannattasio.github.io/portfolio/">
+  <meta property="twitter:title" content="Micaela Giannattasio - Portafolio">
+  <meta property="twitter:description" content="Portafolio con los proyectos realizados durante el desarrollo del cruso Frontend">
+  <meta property="twitter:image" content="https://github.com/micagiannattasio/portfolio/blob/main/img/portafolio.png">
+  <meta name="twitter:image:alt" content="Micaela Giannattasio's photo">
+  
+  <!-- Styles Links -->
   <link rel="stylesheet" href="./css/01-style.css">
   <link rel="stylesheet" href="./css/02-header.css">
   <link rel="stylesheet" href="./css/03-aboutme.css">
@@ -12,6 +36,12 @@
   <link rel="stylesheet" href="./css/06-projects.css">
   <link rel="stylesheet" href="./css/07-contact.css">
   <link rel="stylesheet" href="./css/08-footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- Icons Links -->
   <script src="https://kit.fontawesome.com/348feffef2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   
@@ -20,20 +50,37 @@
 
 <body>
   <!-- COMIENZA EL HEADER -->
-  <header class="header-container margins">
+  <header class="header-container margins" aria-label="Barra de Navegación">
+    <!-- Menú Hamburguesa -->
+    <div class="header-hidden-menu">
+      <input type="checkbox">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+      <i class="fas fa-times" aria-hidden="true"></i>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="#aboutme" aria-label="Hola">HOLA</a></li>
+          <li><a href="#knowledge" aria-label="Conocimientos">CONOCIMIENTOS</a></li>
+          <li><a href="#projects" aria-label="Proyectos">PROYECTOS</a></li>
+          <li><a href="#contact" aria-label="contacto">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </nav>
     <nav class="header-nav">
       <ul class="header-menu">
         <li class="header-nav-item">
-          <a href="#aboutme" class="header-nav-link">HOLA</a> 
+          <a href="#aboutme" class="header-nav-link" aria-label="Hola">HOLA</a> 
         </li>
         <li class="header-nav-item">
-          <a href="#knowledge" class="header-nav-link">CONOCIMIENTOS</a>
+          <a href="#knowledge" class="header-nav-link" aria-label="Conocimientos">CONOCIMIENTOS</a>
         </li>
         <li class="header-nav-item">
-          <a href="#projects" class="header-nav-link">PROYECTOS</a>
+          <a href="#projects" class="header-nav-link" aria-label="Proyectos">PROYECTOS</a>
         </li>
         <li class="header-nav-item">
-          <a href="#contact" class="header-nav-link nav-selected">CONTACTO</a>
+          <a href="#contact" class="header-nav-link nav-selected" aria-label="Contacto">CONTACTO</a>
         </li>
       </ul>
     </nav>
@@ -49,7 +96,7 @@
             <p class="aboutme-greeting">¡Hola! Soy</p>
             <h1 class="aboutme-name">Micaela Giannattasio</h1>
             <p class="aboutme-descrip">Desarrolladora Frontend, fan de los gatos y la música </p>
-            <a href="#projects" class="aboutme-button">LO QUE HAGO</a>
+            <a href="#projects" class="aboutme-button" aria-label="Botón a sección Proyectos">LO QUE HAGO</a>
           </div>
           <figure class="aboutme-info">
             <img src="./img/aboutme.png" class="aboutme-img" alt="Imagen Aboutme">
@@ -67,27 +114,27 @@
         </div>
         <div class="knowledge-box">
               <div class="knowledge-item">
-                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-html5-plain colored" aria-hidden="true"></i>
                 <p class="icon-title">HTML 5</p>
               </div>
               <div class="knowledge-item">
-                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-css3-plain colored" aria-hidden="true"></i>
                 <p class="icon-title">CSS 3</p>
               </div>
               <div class="knowledge-item">
-                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-sass-original colored" aria-hidden="true"></i>
                 <p class="icon-title">SASS</p>
               </div>
               <div class="knowledge-item">
-                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
                 <p class="icon-title">JavaScript</p>
               </div>
               <div class="knowledge-item">
-                <i class="devicon-react-original colored"></i>
+                <i class="devicon-react-original colored" aria-hidden="true"></i>
                 <p class="icon-title">React</p>
               </div>
               <div class="knowledge-item">
-                <i class="devicon-git-plain colored"></i>
+                <i class="devicon-git-plain colored" aria-hidden="true"></i>
                 <p class="icon-title">GIT</p>
               </div>
         </div>
@@ -98,7 +145,7 @@
     <!--COMIENZA SECCIÓN QUOTE-->
     <section id="quote" class="quote margins">
       <article class="quote-container">
-        <i class="fas fa-quote-right"></i>
+        <i class="fas fa-quote-right" aria-hidden="true"></i>
         <blockquote>
           <p class="quote-text">No hay dos fuegos iguales. Hay fuegos grandes y fuegos chicos y fuegos de todos los colores. Hay gente de fuego sereno, que ni se entera del viento, y gente de fuego loco que llena el aire de chispas. Algunos fuegos, fuegos bobos, no alumbran ni queman; pero otros arden la vida con tanta pasión que no se puede mirarlos sin parpadear, y quien se acerca se enciende.</p>
         <h2 class="quote-autor">Eduardo Galeano</h2>
@@ -117,49 +164,49 @@
           </div>
 
           <div class="projects-box">
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Portafolio">
               <figure class="projects-item">
                   <img src="./img/portafolio.png" alt="Imagen del Portafolio" class="projects-item-img">
                   <figcaption class="projects-item-text">Portafolio</figcaption>
               </figure>
             </a>
 
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Generador de Memes">
               <figure class="projects-item" >
                   <img src="./img/memes.png" alt="Generador de memes" class="projects-item-img">
                   <figcaption class="projects-item-text">Generador de Memes</figcaption>
               </figure>
             </a>
             
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Match 3">
               <figure class="projects-item">
                   <img src="./img/match3.png" alt="Match 3" class="projects-item-img">
                   <figcaption class="projects-item-text">Match 3</figcaption>
               </figure>
             </a>
 
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Controlador de gastos">
               <figure class="projects-item">
                   <img src="./img/gastos.png" alt="Controlador de Gastos" class="projects-item-img">
                   <figcaption class="projects-item-text">Controlador de Gastos</figcaption>
               </figure>
             </a>
 
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Administrador de reuniones">
               <figure class="projects-item">
                   <img src="./img/reuniones.png" alt="Administrador de Reuniones" class="projects-item-img">
                   <figcaption class="projects-item-text">Administrador de Reuniones</figcaption>
               </figure>
             </a>
 
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Todo App">
               <figure class="projects-item">
                   <img src="./img/todo-app.png" alt="To-do app" class="projects-item-img">
                   <figcaption class="projects-item-text">Todo app</figcaption>
               </figure>
             </a>
 
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Proyecto Buscar de Películas">
               <figure class="projects-item">
                   <img src="./img/peliculas.png" alt="Buscador de películas" class="projects-item-img">
                   <figcaption class="projects-item-text">Buscador de películas</figcaption>
@@ -179,26 +226,26 @@
 
           <ul class="contact-list">
             <li class="contact-social-item">
-              <a class="contact-social-link" href="https://twitter.com/micagiannatt" target="_blanc">
-                <i class="devicon-twitter-plain contact-social-icon"></i>/micagiannatt
+              <a class="contact-social-link" href="https://twitter.com/micagiannatt" target="_blanc" aria-label="Mi Twitter">
+                <i class="devicon-twitter-plain contact-social-icon" aria-hidden="true"></i>/micagiannatt
               </a>
             </li>
 
             <li class="contact-social-item">
-              <a class="contact-social-link" href="https://github.com/micagiannattasio" target="_blanc">
-                <i class="devicon-github-plain contact-social-icon"></i>/MicaGiannattasio
+              <a class="contact-social-link" href="https://github.com/micagiannattasio" target="_blanc" aria-label="Mi Github">
+                <i class="devicon-github-plain contact-social-icon" aria-hidden="true"></i>/MicaGiannattasio
               </a>
             </li>
 
             <li class="contact-social-item">
-              <a class="contact-social-link" href="https://www.linkedin.com/in/micaela-giannattasio-654ab7129/" target="_blanc">
-                <i class="devicon-linkedin-plain contact-social-icon"></i>/Micaela Giannattasio
+              <a class="contact-social-link" href="https://www.linkedin.com/in/micaela-giannattasio-654ab7129/" target="_blanc" aria-label="Mi Linkedin">
+                <i class="devicon-linkedin-plain contact-social-icon" aria-hidden="true"></i>/Micaela Giannattasio
               </a>
             </li>
 
             <li class="contact-social-item">
-              <a class="contact-social-link" href="mailto:micagiannattasio25@gmail.com" target="_blanc">
-                <i class="fas fa-envelope contact-social-icon"></i>  micagiannattasio25@gmail.com
+              <a class="contact-social-link" href="mailto:micagiannattasio25@gmail.com" target="_blanc" aria-label="Mi mail">
+                <i class="fas fa-envelope contact-social-icon" aria-hidden="true"></i>  micagiannattasio25@gmail.com
               </a>
             </li>
           </ul>
@@ -216,7 +263,8 @@
                   name="userName" 
                   id="user-name" 
                   placeholder="p.ej: Micaela" 
-                  required>
+                  required
+                  aria-label="Nombre">
                 </div>
 
                 <div class="form-box box-1">
@@ -226,7 +274,8 @@
                   name="userLastname" 
                   id="user-Lastname" 
                   placeholder="p.ej: Giannattasio" 
-                  required>
+                  required
+                  aria-label="Apellido">
                 </div>
               </div>  
 
@@ -237,7 +286,8 @@
                   name="userEmail" 
                   id="user-email" 
                   placeholder="p.ej: micagiannattasio25@gmail.com" 
-                  required>
+                  required
+                  aria-label="Mail">
                 </div>
 
                 <div class="form-box">
@@ -248,10 +298,11 @@
                   placeholder="Escriba un mensaje aquí" 
                   cols="30" 
                   rows="10" 
-                  required style="resize: none;"></textarea> 
+                  required style="resize: none;"
+                  aria-label="Escribe tu mensaje"></textarea> 
                 </div>
 
-                <button class="form-button" type="submit">Enviar</button>
+                <button class="form-button" type="submit" aria-label="enviar">Enviar</button>
 
             </form>
           </div>  
@@ -266,42 +317,42 @@
     <nav class="footer-nav">
       <ul class="footer-nav-menu">
         <li class="footer-nav-item">
-          <a href="#aboutme" class="footer-nav-link">HOLA</a> 
+          <a href="#aboutme" class="footer-nav-link" aria-label="hola">HOLA</a> 
         </li>
         <li class="footer-nav-item">
-          <a href="#knowledge" class="footer-nav-link">CONOCIMIENTOS</a>
+          <a href="#knowledge" class="footer-nav-link" aria-label="Conocimientos">CONOCIMIENTOS</a>
         </li>
         <li class="footer-nav-item">
-          <a href="#projects" class="footer-nav-link">PROYECTOS</a>
+          <a href="#projects" class="footer-nav-link" aria-label="proyectos">PROYECTOS</a>
         </li>
         <li class="footer-nav-item">
-          <a href="#contact" class="footer-nav-link">CONTACTO</a>
+          <a href="#contact" class="footer-nav-link" aria-label="contacto">CONTACTO</a>
         </li>
       </ul>
     </nav>
 
     <ul class="footer-contact-list">
       <li class="footer-social-item">
-        <a class="footer-social-link" href="https://twitter.com/micagiannatt" target="_blanc">
-          <i class="devicon-twitter-plain footer-icon"></i>
+        <a class="footer-social-link" href="https://twitter.com/micagiannatt" target="_blanc" aria-label="Mi twitter">
+          <i class="devicon-twitter-plain footer-icon" aria-hidden="true"></i>
         </a>
       </li>
 
       <li class="footer-social-item">
-        <a class="footer-social-link" href="https://github.com/micagiannattasio" target="_blanc">
-          <i class="devicon-github-plain footer-icon"></i>
+        <a class="footer-social-link" href="https://github.com/micagiannattasio" target="_blanc" aria-label="Mi Github">
+          <i class="devicon-github-plain footer-icon" aria-hidden="true"></i>
         </a>
       </li>
 
       <li class="footer-social-item">
-        <a class="footer-social-link" href="https://www.linkedin.com/in/micaela-giannattasio-654ab7129/" target="_blanc">
-          <i class="devicon-linkedin-plain footer-icon"></i>
+        <a class="footer-social-link" href="https://www.linkedin.com/in/micaela-giannattasio-654ab7129/" target="_blanc" aria-label="Mi Linkedin">
+          <i class="devicon-linkedin-plain footer-icon" aria-hidden="true"></i>
         </a>
       </li>
 
       <li class="footer-social-item">
-        <a class="footer-social-link" href="mailto:micagiannattasio25@gmail.com" target="_blanc">
-          <i class="fas fa-envelope footer-icon"></i>
+        <a class="footer-social-link" href="mailto:micagiannattasio25@gmail.com" target="_blanc" aria-label="Mi Mail">
+          <i class="fas fa-envelope footer-icon" aria-hidden="true"></i>
         </a>
       </li>
     </ul>

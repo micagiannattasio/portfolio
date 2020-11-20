@@ -1,10 +1,3 @@
-:root {
-  --background: rgb(54, 57, 63);
-  --background2: #32353B;
-  --yellow: rgb(255, 213, 17);
-  --black: rgb(29, 29, 27);
-  --white: rgb(255,255,255);
-}
 
 .quote {
   background-color: var(--yellow);

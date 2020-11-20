@@ -6,7 +6,10 @@
 
 :root {
   --background: rgb(54, 57, 63);
+  --background2: rgba(54,57,63,0.5);
+  --background-hambmenu: rgb(54, 57, 63, 0.0226);
   --yellow: rgb(255, 213, 17);
+  --yellow2:  rgb(255, 228, 85);
   --black: rgb(29, 29, 27);
   --white: rgb(255,255,255);
 }
@@ -19,7 +22,6 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  /*height: 100vh;*/
   background-color: var(--background);
   color: var(--white)
 }
@@ -30,7 +32,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 @media (max-widht:768px) {
@@ -42,7 +44,4 @@ a {
  .margins {
    padding: 0.625rem;
  }
- /* html, body {
-   width: 100vw;
- } */
 }

@@ -4,6 +4,8 @@
   background-color: var(--yellow);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-nav-menu {
@@ -19,6 +21,10 @@
 .footer-nav-item {
   font-weight: bold;
   padding-right: 0.9375rem;
+}
+
+.footer-nav-link {
+  color: var(--black);
 }
 
 .footer-contact-list {
@@ -65,7 +71,6 @@
   text-align: center;
   color: var(--black);
   margin: 1.875rem 0 4.375rem 0;
-
   font-weight: bold;
   font-size: 1rem;
 }
