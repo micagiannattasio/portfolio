@@ -1,13 +1,15 @@
+.aboutme, .aboutme-container, .aboutme-info, .aboutme-button {
+  display: flex;
+}
+
 .aboutme {
   background-color: var(--background);
   height: 100vh;
   margin-top: 5.625rem; 
-  display: flex;
   justify-content: center;
 }
 
 .aboutme-container {
-  display: flex;
   justify-content: space-between;
   text-align: center;
   width: 100%;
@@ -15,7 +17,6 @@
 }
 
 .aboutme-info {
-  display: flex;
   flex-direction: column;
   max-width: 500px;
   /*align-items: flex-start;*/
@@ -57,7 +58,6 @@ img {
   border-radius: 100px;
   width: fit-content;
   padding: 0.625rem 2.5rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
